@@ -61,11 +61,11 @@ namespace WpfResourceString.Resources {
         }
         
         /// <summary>
-        ///   hoge に類似しているローカライズされた文字列を検索します。
+        ///   Hello に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string HOGE {
+        public static string HELLO {
             get {
-                return ResourceManager.GetString("HOGE", resourceCulture);
+                return ResourceManager.GetString("HELLO", resourceCulture);
             }
         }
     }

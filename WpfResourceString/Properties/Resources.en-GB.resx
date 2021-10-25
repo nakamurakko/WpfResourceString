@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="HELLO" xml:space="preserve">
-    <value>こんにちは</value>
+    <value>Hello</value>
+  </data>
+  <data name="GOODBYE" xml:space="preserve">
+    <value>Goodbye</value>
   </data>
 </root>

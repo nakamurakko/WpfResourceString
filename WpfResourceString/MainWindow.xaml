@@ -4,14 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfResourceString"
-        xmlns:resources="clr-namespace:WpfResourceString.Resources"
+        xmlns:properties="clr-namespace:WpfResourceString.Properties"
         mc:Ignorable="d"
         Title="WpfResourceString"
         Height="300"
         Width="400">
 
+    <Window.DataContext>
+        <local:MainWindowViewModel />
+    </Window.DataContext>
+
     <StackPanel>
-        <TextBlock Text="{x:Static resources:Resource.HELLO}" />
+
+        <!-- 直接リソースファイルを参照。 -->
+        <TextBlock Text="{x:Static properties:Resources.HELLO}" />
+
+        <!-- バインドして参照。 -->
+        <TextBlock Text="{Binding GoodBye}" />
+
     </StackPanel>
 
 </Window>
